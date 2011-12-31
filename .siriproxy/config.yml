@@ -10,12 +10,12 @@ plugins:
     #   git: 'git://github.com/plamoni/SiriProxy-Thermostat.git'
     #   host: '192.168.2.71' 
 
-    # - name: 'Twitter'
-    #   path: './plugins/siriproxy-twitter' # path works just like specifing in gemfile 
-    #   consumer_key: "YOUR_KEY" 
-    #   consumer_secret: "YOUR_SECRET"
-    #   oauth_token: "YOUR_TOKEN" 
-    #   oauth_token_secret: "YOUR_TOKEN_SECRET"
+    - name: 'Twitter'
+      git: 'git://github.com/netpro2k/SiriProxy-Twitter.git' # path works just like specifing in gemfile 
+      consumer_key: "EtV07DWudLWvtsaivEk1w" 
+      consumer_secret: "tFFJwPJEW0sJZctG0CorMm6oAIrqvgBMEMtyOyVg"
+      oauth_token: "14288790-4385a4ETyG7qPwCc071XmpmcQq8hEaJFg6070dkEW" 
+      oauth_token_secret: "idDUICQl9WjWaAzYLC35KDX1Fr95s3N1J9GfBmqxi2s"
 
     # Note: Eliza should not be run with other plugins
     # - name: 'Eliza'

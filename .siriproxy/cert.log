@@ -1,0 +1,87 @@
+
+Generating a 1024 bit RSA private key
+.............................................++++++
+...................++++++
+writing new private key to '/tmp/siriCA/private/cakey.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:State or Province Name (full name) [Some-State]:Locality Name (eg, city) []:Organization Name (eg, company) [Internet Widgits Pty Ltd]:Organizational Unit Name (eg, section) []:Common Name (eg, YOUR name) []:Email Address []:
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:An optional company name []:Using configuration from /Users/skierdb526/Documents/SiriProxy/lib/siriproxy/../../scripts/openssl.cnf
+Check that the request matches the signature
+Signature ok
+Certificate Details:
+        Serial Number:
+            e0:13:45:68:1d:de:a4:01
+        Validity
+            Not Before: Dec 31 22:49:50 2011 GMT
+            Not After : Dec 30 22:49:50 2014 GMT
+        Subject:
+            countryName               = US
+            stateOrProvinceName       = Missouri
+            organizationName          = Siri Proxy
+            commonName                = SiriProxyCA
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                37:51:2F:C3:12:93:2E:27:8A:42:55:A4:AC:5E:8B:DE:A6:FE:DF:AB
+            X509v3 Authority Key Identifier: 
+                keyid:37:51:2F:C3:12:93:2E:27:8A:42:55:A4:AC:5E:8B:DE:A6:FE:DF:AB
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+Certificate is to be certified until Dec 30 22:49:50 2014 GMT (1095 days)
+
+Write out database with 1 new entries
+Data Base Updated
+Generating a 1024 bit RSA private key
+.........++++++
+.............++++++
+writing new private key to '/tmp/newkey.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:State or Province Name (full name) [Some-State]:Locality Name (eg, city) []:Organization Name (eg, company) [Internet Widgits Pty Ltd]:Organizational Unit Name (eg, section) []:Common Name (eg, YOUR name) []:Email Address []:
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:An optional company name []:Using configuration from /Users/skierdb526/Documents/SiriProxy/lib/siriproxy/../../scripts/openssl.cnf
+Check that the request matches the signature
+Signature ok
+Certificate Details:
+        Serial Number:
+            e0:13:45:68:1d:de:a4:02
+        Validity
+            Not Before: Dec 31 22:49:50 2011 GMT
+            Not After : Dec 30 22:49:50 2012 GMT
+        Subject:
+            countryName               = US
+            stateOrProvinceName       = Missouri
+            organizationName          = Siri Proxy
+            commonName                = guzzoni.apple.com
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                E1:C8:8A:26:9A:13:B9:B7:B0:FB:4E:61:58:55:2C:3F:1C:79:84:6A
+            X509v3 Authority Key Identifier: 
+                keyid:37:51:2F:C3:12:93:2E:27:8A:42:55:A4:AC:5E:8B:DE:A6:FE:DF:AB
+
+Certificate is to be certified until Dec 30 22:49:50 2012 GMT (365 days)
+Sign the certificate? [y/n]:
+
+1 out of 1 certificate requests certified, commit? [y/n]Write out database with 1 new entries
+Data Base Updated
+writing RSA key

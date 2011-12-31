@@ -14,16 +14,44 @@ GIT
       eventmachine
       uuidtools
 
+GIT
+  remote: git://github.com/netpro2k/SiriProxy-Twitter.git
+  revision: ea11734bf0a9da4b7f4a8b17470cc08c950a85c1
+  specs:
+    siriproxy-twitter (0.0.1)
+      twitter
+
+PATH
+  remote: ./plugins/siriproxy-example
+  specs:
+    siriproxy-example (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
     CFPropertyList (2.0.17)
       libxml-ruby (>= 1.1.0)
       rake (>= 0.7.0)
+    activesupport (3.1.3)
+      multi_json (~> 1.0)
+    addressable (2.2.6)
     eventmachine (0.12.10)
+    faraday (0.7.5)
+      addressable (~> 2.2.6)
+      multipart-post (~> 1.1.3)
+      rack (< 2, >= 1.1.0)
     geocoder (1.1.0)
     libxml-ruby (2.2.2)
+    multi_json (1.0.4)
+    multipart-post (1.1.4)
+    rack (1.4.0)
     rake (0.9.2.2)
+    simple_oauth (0.1.5)
+    twitter (2.0.2)
+      activesupport (< 4, >= 2.3.9)
+      faraday (~> 0.7)
+      multi_json (~> 1.0)
+      simple_oauth (~> 0.1)
     uuidtools (2.1.2)
 
 PLATFORMS
@@ -32,3 +60,5 @@ PLATFORMS
 DEPENDENCIES
   cora!
   siriproxy!
+  siriproxy-example!
+  siriproxy-twitter!
