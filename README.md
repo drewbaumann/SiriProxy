@@ -74,8 +74,8 @@ Clone this repo locally, then navigate into the SiriProxy directory (the root of
 	`rvmsudo gem install rake bundler`  
 2. Install SiriProxy gem (do this from your SiriProxy directory):  
 	`rake install`  
-3. Make ./.siriproxy directory:  
-	`mkdir ~/./.siriproxy`  
+3. Make .siriproxy directory:  
+	`mkdir .siriproxy`  
 4. Move default config file to ./.siriproxy (if you need to make configuration changes, do that now by editing the config.yml):  
 	`cp ./config.example.yml ~/./.siriproxy/config.yml`  
 5. Generate certificates:  

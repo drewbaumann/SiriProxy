@@ -54,9 +54,9 @@ class SiriProxy::Connection < EventMachine::Connection
   def read_auth_data
     map = Hash.new
 
-    map["speech_id"] = read_relative_file("~/./.siriproxy/speech_id")
-    map["assistant_id"] = read_relative_file("~/./.siriproxy/assistant_id")
-    map["session_data"] = read_relative_file("~/./.siriproxy/session_data")
+    map["speech_id"] = read_relative_file("./.siriproxy/speech_id")
+    map["assistant_id"] = read_relative_file("./.siriproxy/assistant_id")
+    map["session_data"] = read_relative_file("./.siriproxy/session_data")
 
     puts map
     map
@@ -222,7 +222,7 @@ class SiriProxy::Connection < EventMachine::Connection
         if @faux == false
           # We're on a 4S
           data = object["properties"]["sessionValidationData"].unpack('H*').join("")
-          write_relative_file("~/./.siriproxy/session_data", data)
+          write_relative_file("./.siriproxy/session_data", data)
         else
           if @auth_data == nil
             puts "[Error] No session data available."
@@ -237,7 +237,7 @@ class SiriProxy::Connection < EventMachine::Connection
         if @faux == false
           # We're on a 4S
           data = object["properties"]["speechId"]
-          write_relative_file("~/./.siriproxy/speech_id", data)
+          write_relative_file("./.siriproxy/speech_id", data)
         else
           if @auth_data == nil
             puts "[Error] No speech id available."
@@ -252,7 +252,7 @@ class SiriProxy::Connection < EventMachine::Connection
         if @faux == false
           # We're on a 4S
           data = object["properties"]["assistantId"]
-          write_relative_file("~/./.siriproxy/assistant_id", data)
+          write_relative_file("./.siriproxy/assistant_id", data)
         else
           if @auth_data == nil
             puts "[Error] No assistant id available."
