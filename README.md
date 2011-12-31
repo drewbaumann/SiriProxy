@@ -74,22 +74,22 @@ Clone this repo locally, then navigate into the SiriProxy directory (the root of
 	`rvmsudo gem install rake bundler`  
 2. Install SiriProxy gem (do this from your SiriProxy directory):  
 	`rake install`  
-3. Make .siriproxy directory:  
-	`mkdir ~/.siriproxy`  
-4. Move default config file to .siriproxy (if you need to make configuration changes, do that now by editing the config.yml):  
-	`cp ./config.example.yml ~/.siriproxy/config.yml`  
+3. Make ./.siriproxy directory:  
+	`mkdir ~/./.siriproxy`  
+4. Move default config file to ./.siriproxy (if you need to make configuration changes, do that now by editing the config.yml):  
+	`cp ./config.example.yml ~/./.siriproxy/config.yml`  
 5. Generate certificates:  
 	`siriproxy gencerts`
-6. Install `~/.siriproxy/ca.pem` on your phone. This can easily be done by emailing the file to yourself and clicking on it in the iPhone email app. Follow the prompts.
+6. Install `~/./.siriproxy/ca.pem` on your phone. This can easily be done by emailing the file to yourself and clicking on it in the iPhone email app. Follow the prompts.
 7. Bundle SiriProxy (this should be done every time you change the config.yml):  
 	`siriproxy bundle`
 8. Start SiriProxy (must start as root because it uses a port < 1024):  
 	`rvmsudo siriproxy server`
 9. Test that the server is running by saying "Test Siri Proxy" to your phone.
 
-Note: on some machines, rvmsudo changes "`~`" to "`/root/`". This means that you may need to symlink your "`.siriproxy`" directory to "`/root/`" in order to get the application to work:  
+Note: on some machines, rvmsudo changes "`~`" to "`/root/`". This means that you may need to symlink your "`./.siriproxy`" directory to "`/root/`" in order to get the application to work:  
 
-	sudo ln -s ~/.siriproxy /root/.siriproxy
+	sudo ln -s ~/./.siriproxy /root/./.siriproxy
 
 **Updating SiriProxy**
 
