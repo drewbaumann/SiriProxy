@@ -1,10 +1,11 @@
 source :gemcutter
 
-gemspec
+# gemspec
 
 # load plugins
 require 'yaml'
 require 'ostruct'
+gem 'siriproxy', :git => 'git://github.com/drewbaumann/SiriProxy.git'
 
 if !File.exists?(File.expand_path('~/.siriproxy/config.yml'))
   $stderr.puts "config.yml not found. Copy config.example.yml to config.yml, then modify it."
